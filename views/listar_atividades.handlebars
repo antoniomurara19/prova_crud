@@ -1,0 +1,20 @@
+<h1>Listar Atividades</h1>
+
+<table border="1">
+    <thead>
+        <th>Id</th>
+        <th>Número do Atividade</th>
+        <th>Nome do Atividade</th>
+        <th>Id do Atividade</th>
+    </thead>
+    {{#each dados}}
+    <tbody>
+        <tr>
+            <td>{{this.id}}</td>
+            <td>{{this.num_atividade}}</td>
+            <td>{{this.nome_atividade}}</td>
+            <td>{{this.setorId}}</td>
+        </tr>
+    </tbody>
+    {{/each}}
+</table>
